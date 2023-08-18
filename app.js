@@ -36,7 +36,7 @@ function pMove(num, player){
     p = player;
     check()
     return p;
-    
+
   }
   
 }
