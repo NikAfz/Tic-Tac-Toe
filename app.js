@@ -20,7 +20,7 @@ document.getElementById('tb-9').addEventListener('click', () => {pMove(9, `${p}`
 
 function pMove(num, player){
   
-  if (document.getElementById(`tb-${num}`).innerHTML === 'O' || document.getElementById(`tb-${num}`).innerHTML === 'X' || document.getElementById(`tb-${num}`).innerHTML === '--'){
+  if (document.getElementById(`tb-${num}`).innerHTML === 'O' || document.getElementById(`tb-${num}`).innerHTML === 'X' || document.getElementById(`tb-${num}`).innerHTML === '&nbsp;'){
     alert('Try again');
     p = player;
     return p;
@@ -121,7 +121,7 @@ function winShow(winer){
   document.getElementById('won').innerHTML = `${winer} won the game` ;
   for ( let i = 1; i < 10; i++) {
     if (document.getElementById(`tb-${i}`).innerHTML === '&nbsp; &nbsp;'){
-      document.getElementById(`tb-${i}`).innerHTML = '--';
+      document.getElementById(`tb-${i}`).innerHTML = '&nbsp;';
     }
     
   }
